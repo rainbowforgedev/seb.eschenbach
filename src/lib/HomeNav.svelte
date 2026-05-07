@@ -4,7 +4,8 @@
 	const links = [
 		{label: 'AUSSTELLUNGEN', href:'/ausstellungen'},
 		{ label: 'GALERIE', href: '/galerie' },
-		{ label: 'VITA', href: '/vita' }
+		{ label: 'VITA', href: '/vita' },
+		{ label: 'KONTAKT', href: '/kontakt' }
 	];
 </script>
 

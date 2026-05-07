@@ -1,17 +1,21 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import signature from '$lib/assets/images/sign.png';
 
 	const links = [
 		{ label: 'GALERIE', href: '/galerie' },
 		{ label: 'VITA', href: '/vita' },
-		{ label: 'AUSSTELLUNGEN', href: '/ausstellungen' }
+		{ label: 'AUSSTELLUNGEN', href: '/ausstellungen' },
+		{ label: 'KONTAKT', href: '/kontakt' }
 	];
 
 	let pathname = $derived($page.url.pathname);
 </script>
 
 <header>
-	<a href="/" class="logo">S. Eschenbach</a>
+	<a href="/" class="logo">
+		<img src={signature} alt="S. Eschenbach" />
+	</a>
 	<nav>
 		{#each links as link}
 			<a href={link.href} class:active={pathname.startsWith(link.href)}>{link.label}</a>
@@ -33,15 +37,19 @@
 	}
 
 	.logo {
-		font-family: var(--font-mono);
-		font-size: 0.78rem;
-		letter-spacing: 0.08em;
-		color: var(--color-ink);
+		display: block;
+		line-height: 0;
 	}
 
-	.logo:hover {
-		text-decoration: underline;
-		text-underline-offset: 4px;
+	.logo img {
+		height: 42px;
+		width: auto;
+		opacity: 0.85;
+		transition: opacity 0.15s;
+	}
+
+	.logo:hover img {
+		opacity: 1;
 	}
 
 	nav {

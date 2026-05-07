@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import bg from '$lib/assets/images/bg-1.jpg';
 	import HomeNav from '$lib/HomeNav.svelte';
 
 	onMount(() => {
@@ -17,7 +16,7 @@
 </svelte:head>
 
 <div class="frame">
-	<div class="hero" style:background-image="url({bg})">
+	<div class="hero" style:background-image="url(/bg-1.jpg)">
 		<HomeNav />
 	</div>
 </div>
