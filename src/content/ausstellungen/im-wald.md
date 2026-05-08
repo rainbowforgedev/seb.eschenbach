@@ -1,11 +1,13 @@
 ---
-title: Im Wald
+title: Im Wald - Ölgemälde von Sebastian Eschenbach
 slug: im-wald
 location: Rathaus Angermünde
-dateFrom: September 2022
-dateTo: Oktober 2022
+dateFrom: 23. Januar 2025
+dateTo: 13. März 2025
 image: /Ausstellung-ImWald.jpeg
 orientation: portrait
 ---
 
-Ölgemälde und Zeichnungen aus dem Wald — das Innehalten zwischen den Bäumen.
+Die Ausstellung „Im Wald“ von Sebastian Eschenbach widmet sich dem uckermärkischen Wald. In eindrucksvollen, großformatigen Ölgemälden wird der Wald nicht nur als Landschaft dargestellt, sondern als lebendiger Resonanzraum, der den Betrachter auf eine stille, zugleich intensive Reise mitnimmt.
+
+Im Mittelpunkt steht der Wald der Uckermark, geprägt von einer weitgehend unberührten Natur. Diese besondere Landschaft bildet den unmittelbaren Erfahrungsraum des Malers Sebastian Eschenbach, der seit über 20 Jahren in der Uckermark lebt und arbeitet. Das tägliche Erleben des Waldes prägen die Bildsprache und verleihen den Arbeiten eine besondere Intensität.
