@@ -10,4 +10,4 @@ orientation: portrait
 
 Die Ausstellung „Im Wald“ von Sebastian Eschenbach widmet sich dem uckermärkischen Wald. In eindrucksvollen, großformatigen Ölgemälden wird der Wald nicht nur als Landschaft dargestellt, sondern als lebendiger Resonanzraum, der den Betrachter auf eine stille, zugleich intensive Reise mitnimmt.
 
-Im Mittelpunkt steht der Wald der Uckermark, geprägt von einer weitgehend unberührten Natur. Diese besondere Landschaft bildet den unmittelbaren Erfahrungsraum des Malers Sebastian Eschenbach, der seit über 20 Jahren in der Uckermark lebt und arbeitet. Das tägliche Erleben des Waldes prägen die Bildsprache und verleihen den Arbeiten eine besondere Intensität.
+Im Mittelpunkt steht der Wald der Uckermark, geprägt von einer weitgehend unberührten Natur. Diese besondere Landschaft bildet den unmittelbaren Erfahrungsraum des Malers Sebastian Eschenbach.
