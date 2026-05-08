@@ -1,8 +1,8 @@
 ---
-slug: dominikanerkloster
-title: Dominikanerkloster
-year: 2021
-technique: Acryl auf Papier
+title: Zwischen weite und stille
+slug: Zwischen-weite-und-stille
+year: 2025
+technique: Acryl auf MDF
 dimensions: 50 × 70 cm
 image: /Ausstellung-DominikanerKloster.jpeg
 ---
