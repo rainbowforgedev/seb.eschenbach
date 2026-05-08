@@ -1,6 +1,6 @@
 <script lang="ts">
 	import PageHeader from '$lib/PageHeader.svelte';
-	import { werke } from '$lib/data/werke';
+	import { werke } from '$lib/content';
 </script>
 
 <svelte:head>

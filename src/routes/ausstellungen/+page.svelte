@@ -1,7 +1,7 @@
 <script lang="ts">
 	import PageHeader from '$lib/PageHeader.svelte';
 	import PostcardCard from '$lib/PostcardCard.svelte';
-	import { ausstellungen } from '$lib/data/ausstellungen';
+	import { ausstellungen } from '$lib/content';
 
 	const current = ausstellungen.find((a) => a.isCurrent);
 	const past = ausstellungen.filter((a) => !a.isCurrent);

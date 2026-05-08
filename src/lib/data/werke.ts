@@ -6,6 +6,8 @@ export interface Werk {
 	dimensions: string;
 	image: string;
 	description?: string;
+	price?: string;
+	status?: string;
 }
 
 export const werke: Werk[] = [
@@ -15,8 +17,9 @@ export const werke: Werk[] = [
 		year: 2025,
 		technique: 'Öl auf MDF',
 		dimensions: '40 × 60 cm',
-		//price: 200€,
-		image: '/landschaft.jpg'
+		image: '/landschaft.jpg',
+		price: '200€',
+		status: 'Verkauft'
 	},
 	{
 		slug: 'im-wald',

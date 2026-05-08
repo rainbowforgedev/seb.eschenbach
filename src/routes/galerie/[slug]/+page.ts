@@ -1,4 +1,4 @@
-import { werke } from '$lib/data/werke';
+import { werke } from '$lib/content';
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 

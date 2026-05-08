@@ -1,0 +1,77 @@
+backend:
+  name: github
+  repo: eschencode/seb.eschenbach
+  branch: main
+
+# Lokaler Entwicklungsmodus — startet mit: npx @sveltia/cms-proxy-server
+local_backend: true
+
+media_folder: static/uploads
+public_folder: /uploads
+
+collections:
+  - name: werke
+    label: Werke
+    label_singular: Werk
+    folder: src/content/werke
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { label: Titel, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string, hint: "URL-freundlicher Name, z.B. bei-gerswalde" }
+      - { label: Jahr, name: year, widget: number, value_type: int }
+      - { label: Technik, name: technique, widget: string, hint: "z.B. Öl auf Leinwand" }
+      - { label: Maße, name: dimensions, widget: string, hint: "z.B. 40 × 60 cm" }
+      - { label: Bild, name: image, widget: image }
+      - { label: Beschreibung, name: body, widget: markdown, required: false }
+
+  - name: ausstellungen
+    label: Ausstellungen
+    label_singular: Ausstellung
+    folder: src/content/ausstellungen
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { label: Titel, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Ort, name: location, widget: string }
+      - { label: Von, name: dateFrom, widget: string, hint: "z.B. 1. Mai 2026" }
+      - { label: Bis, name: dateTo, widget: string, hint: "z.B. 27. Juni 2026" }
+      - { label: Bild, name: image, widget: image }
+      - label: Ausrichtung
+        name: orientation
+        widget: select
+        options:
+          - { label: Querformat, value: landscape }
+          - { label: Hochformat, value: portrait }
+        default: landscape
+      - { label: Aktuelle Ausstellung, name: isCurrent, widget: boolean, default: false }
+      - { label: Beschreibung, name: body, widget: markdown }
+
+  - name: vita
+    label: Vita
+    label_singular: Vita-Eintrag
+    folder: src/content/vita
+    create: true
+    delete: true
+    slug: "{{year}}-{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+      - { label: Jahr, name: year, widget: string, hint: "z.B. 2023 oder 1980–1985" }
+      - { label: Titel, name: title, widget: string }
+      - label: Kategorie
+        name: category
+        widget: select
+        options:
+          - { label: Ausbildung, value: ausbildung }
+          - { label: Ausstellung, value: ausstellung }
+          - { label: Preis, value: preis }
+          - { label: Sonstiges, value: sonstiges }
+      - { label: Beschreibung, name: body, widget: markdown, required: false }

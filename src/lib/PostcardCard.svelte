@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Ausstellung } from '$lib/data/ausstellungen';
+	import type { Ausstellung } from '$lib/content';
 
 	let {
 		ausstellung,
@@ -41,7 +41,7 @@
 					</div>
 					<div class="message">
 						<h3>{ausstellung.title}</h3>
-						<p>{ausstellung.description}</p>
+						<p>{ausstellung.body}</p>
 					</div>
 					<div class="address">
 						<div class="addr-line">{ausstellung.dateFrom} – {ausstellung.dateTo}</div>
@@ -53,7 +53,7 @@
 				<div class="back-landscape">
 					<div class="message">
 						<h3>{ausstellung.title}</h3>
-						<p>{ausstellung.description}</p>
+						<p>{ausstellung.body}</p>
 					</div>
 					<div class="separator"></div>
 					<div class="address-area">
