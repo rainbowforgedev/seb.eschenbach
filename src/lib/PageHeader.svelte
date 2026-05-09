@@ -77,10 +77,27 @@
 
 	@media (max-width: 640px) {
 		header {
+			flex-wrap: wrap;
+			row-gap: 0.4rem;
 			padding: 0.75rem 1.25rem;
 		}
 		nav {
-			gap: 1.5rem;
+			gap: 1.25rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		header {
+			padding: 0.65rem 1rem 0.75rem;
+		}
+		nav {
+			width: 100%;
+			justify-content: space-between;
+			gap: 0.25rem;
+		}
+		nav a {
+			font-size: 0.62rem;
+			letter-spacing: 0.08em;
 		}
 	}
 </style>

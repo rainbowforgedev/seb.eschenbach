@@ -1,10 +1,8 @@
 <script lang="ts">
 	import type { Ausstellung } from '$lib/content';
 
-	let {
-		ausstellung,
-		featured = false
-	}: { ausstellung: Ausstellung; featured?: boolean } = $props();
+	let { ausstellung, featured = false }: { ausstellung: Ausstellung; featured?: boolean } =
+		$props();
 
 	let flipped = $state(false);
 	let isPortrait = $derived(ausstellung.orientation !== 'landscape');
@@ -26,7 +24,9 @@
 		<!-- Front: exhibition photo -->
 		<div class="face front">
 			<img src={ausstellung.image} alt={ausstellung.title} loading="lazy" />
-			<span class="flip-hint">↺</span>
+			<span class="flip-hint">
+				<span class="flip-hint-icon" aria-hidden="true">↺</span>
+			</span>
 		</div>
 
 		<!-- Back: image OR preset layout -->
@@ -127,14 +127,47 @@
 
 	.flip-hint {
 		position: absolute;
-		bottom: 0.6rem;
+		bottom: 0.7rem;
 		right: 0.75rem;
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0.3rem 0.55rem;
+		background: rgba(245, 241, 234, 0.88);
+		border: 1px solid rgba(0, 0, 0, 0.12);
 		font-family: var(--font-mono);
-		font-size: 0.65rem;
-		letter-spacing: 0.12em;
-		color: rgba(0, 0, 0, 0.35);
+		font-size: 0.6rem;
+		letter-spacing: 0.18em;
+		color: rgba(0, 0, 0, 0.7);
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(4px);
 		pointer-events: none;
 		user-select: none;
+		transition:
+			background 0.25s ease,
+			color 0.25s ease,
+			transform 0.4s ease;
+	}
+
+	.flip-hint-icon {
+		display: inline-block;
+		font-size: 0.85rem;
+		line-height: 1;
+		transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.scene:hover .flip-hint {
+		background: rgba(245, 241, 234, 1);
+		color: rgba(0, 0, 0, 0.9);
+	}
+
+	.scene:hover .flip-hint-icon {
+		transform: rotate(-180deg);
+	}
+
+	/* Subtle hover tilt — hints at the flippable nature */
+	.scene:hover .card:not(.is-flipped) {
+		transform: rotateY(-7deg) rotateX(2deg);
 	}
 
 	/* ── Back: shared base ── */
@@ -168,6 +201,7 @@
 		font-style: italic;
 		color: var(--color-ink);
 		line-height: 1.3;
+		overflow-wrap: break-word;
 	}
 
 	.message p {
@@ -176,6 +210,7 @@
 		line-height: 1.7;
 		color: #333;
 		margin-top: 0.5rem;
+		overflow-wrap: break-word;
 	}
 
 	/* Shared address line typography */

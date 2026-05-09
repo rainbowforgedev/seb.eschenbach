@@ -37,10 +37,22 @@
 					<dt>Maße</dt>
 					<dd>{werk.dimensions}</dd>
 				</div>
-				{#if werk.description}
+				{#if werk.status}
+					<div class="meta-row">
+						<dt>Status</dt>
+						<dd>{werk.status}</dd>
+					</div>
+				{/if}
+				{#if werk.price}
+					<div class="meta-row">
+						<dt>Preis</dt>
+						<dd>{werk.price}</dd>
+					</div>
+				{/if}
+				{#if werk.body}
 					<div class="meta-row description">
 						<dt>Beschreibung</dt>
-						<dd>{werk.description}</dd>
+						<dd>{werk.body}</dd>
 					</div>
 				{/if}
 			</dl>
@@ -118,6 +130,7 @@
 		font-family: var(--font-serif);
 		font-size: 1rem;
 		font-style: italic;
+		overflow-wrap: break-word;
 	}
 
 	.description dt {

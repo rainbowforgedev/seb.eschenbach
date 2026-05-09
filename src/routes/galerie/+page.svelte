@@ -33,20 +33,21 @@
 <style>
 	main {
 		padding: 3rem 2rem 4rem;
-		min-height: calc(100vh - 49px);
 	}
 
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 1px;
-		background-color: var(--color-border);
 		border: 1px solid var(--color-border);
+		overflow: hidden;
 	}
 
 	.card {
 		display: block;
 		background: var(--color-bg);
+		box-shadow:
+			1px 0 0 0 var(--color-border),
+			0 1px 0 0 var(--color-border);
 	}
 
 	.img-wrap {
@@ -116,6 +117,12 @@
 		font-size: 0.68rem;
 		letter-spacing: 0.1em;
 		color: #888;
+	}
+
+	@media (max-width: 480px) {
+		main {
+			padding: 1.5rem 0.75rem 3rem;
+		}
 	}
 
 	@media (min-width: 640px) {

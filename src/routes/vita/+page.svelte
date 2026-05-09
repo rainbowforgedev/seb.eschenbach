@@ -1,5 +1,6 @@
 <script lang="ts">
 	import PageHeader from '$lib/PageHeader.svelte';
+	import { vitaPage } from '$lib/content';
 </script>
 
 <svelte:head>
@@ -12,19 +13,19 @@
 <main>
 	<div class="vita-layout">
 		<aside class="portrait">
-			<img src="/vita_main.jpeg" alt="S. Eschenbach" />
+			<img src={vitaPage.portrait} alt="S. Eschenbach" />
 		</aside>
 
 		<section class="bio">
 			<h1>Vita</h1>
 			<p class="bio-text">
-				Seit zwanzig Jahren lebe ich in der Uckermark. Immer wieder erkunde ich mit Skizzenbuch, Bleistift und Pinsel die Landschaft. Nach all den Jahren ist die Faszination geblieben: die Weite, das sich ständig ändernde Licht, die Jahreszeiten, die Pflanzen und Bäume. Für mich dazugekommen sind großformatige Gemälde in Öl
+				{vitaPage.body}
 			</p>
 		</section>
 	</div>
 
 	<section class="press">
-		<img src="/ZeitungsArtiekel.jpeg" alt="Zeitungsartikel" />
+		<img src={vitaPage.pressImage} alt="Zeitungsartikel" />
 	</section>
 </main>
 

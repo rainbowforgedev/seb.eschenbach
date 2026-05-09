@@ -3,6 +3,7 @@
 	import type { SubmitFunction } from '@sveltejs/kit';
 	import PageHeader from '$lib/PageHeader.svelte';
 	import signature from '$lib/assets/images/landschaft.jpg';
+	import { kontaktPage } from '$lib/content';
 
 	let { form } = $props();
 
@@ -53,21 +54,18 @@
 		<dl class="contact-list">
 			<div class="row">
 				<dt>Name</dt>
-				<dd>Sebastian Eschenbach</dd>
+				<dd>{kontaktPage.name}</dd>
 			</div>
 			<div class="row">
 				<dt>E-Mail</dt>
-				<dd><a href="mailto:seb.eschenbach@arcor.de">seb.eschenbach@arcor.de</a></dd>
+				<dd><a href="mailto:{kontaktPage.email}">{kontaktPage.email}</a></dd>
 			</div>
 			<div class="row">
 				<dt>Telefon</dt>
-				<dd><a href="tel:+490000000000">+49 000 0000000</a></dd>
+				<dd><a href="tel:{kontaktPage.phone.replace(/\s/g, '')}">{kontaktPage.phone}</a></dd>
 			</div>
 		</dl>
-		<p class="hint">
-			Oder schreiben Sie mir eine Postkarte — füllen Sie sie aus, und sie kommt direkt in mein
-			Postfach.
-		</p>
+		<p class="hint">{kontaktPage.hint}</p>
 	</section>
 
 	<section class="card-stage" class:flying class:done>
@@ -135,10 +133,9 @@
 				<div class="address">
 					<div class="addr-label">An</div>
 					<div class="addr-lines">
-						<div class="addr-line">Sebastian Eschenbach</div>
-						<div class="addr-line">Atelier in der Uckermark</div>
-						<div class="addr-line">Auf den weißen Bergen</div>
-						<div class="addr-line">Deutschland</div>
+						{#each kontaktPage.address as line}
+							<div class="addr-line">{line}</div>
+						{/each}
 					</div>
 				</div>
 
@@ -165,6 +162,7 @@
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 3rem;
+		flex-grow: 0;
 	}
 
 	.section-label {
@@ -484,6 +482,7 @@
 	/* ── Send button ── */
 	.send {
 		margin-top: 2rem;
+		min-height: 44px;
 		padding: 0.65rem 1.6rem;
 		font-family: var(--font-mono);
 		font-size: 0.75rem;

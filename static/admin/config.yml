@@ -29,6 +29,8 @@ collections:
       - { label: Technik, name: technique, widget: string, hint: "z.B. Öl auf Leinwand" }
       - { label: Maße, name: dimensions, widget: string, hint: "z.B. 40 × 60 cm" }
       - { label: Bild, name: image, widget: image }
+      - { label: Status, name: status, widget: string, required: false, hint: "z.B. Verfügbar, Verkauft, Reserviert" }
+      - { label: Preis, name: price, widget: string, required: false, hint: "z.B. 1.200 €" }
       - { label: Beschreibung, name: body, widget: markdown, required: false }
 
   - name: ausstellungen
@@ -56,6 +58,31 @@ collections:
         default: landscape
       - { label: Aktuelle Ausstellung, name: isCurrent, widget: boolean, default: false }
       - { label: Beschreibung, name: body, widget: markdown }
+
+  - name: pages
+    label: Seiten
+    files:
+      - name: vita_page
+        label: Vita Seite
+        file: src/content/pages/vita.md
+        format: yaml-frontmatter
+        fields:
+          - { label: Portraitbild, name: portrait, widget: image }
+          - { label: Pressebild, name: pressImage, widget: image }
+          - { label: Biografie, name: body, widget: markdown }
+      - name: kontakt_page
+        label: Kontakt Seite
+        file: src/content/pages/kontakt.md
+        format: yaml-frontmatter
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: 'E-Mail', name: email, widget: string }
+          - { label: Telefon, name: phone, widget: string }
+          - label: Adresszeilen
+            name: address
+            widget: list
+            hint: "Zeilen für die Postkarten-Adresse"
+          - { label: Hinweistext, name: hint, widget: string }
 
   - name: vita
     label: Vita

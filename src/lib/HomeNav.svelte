@@ -62,4 +62,20 @@
 		text-decoration: underline;
 		text-underline-offset: 4px;
 	}
+
+	@media (max-width: 480px) {
+		.home-nav {
+			width: 90%;
+			gap: 1.25rem;
+		}
+		nav {
+			gap: 0.5rem;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		nav a {
+			font-size: 0.68rem;
+			letter-spacing: 0.08em;
+		}
+	}
 </style>
