@@ -1,5 +1,5 @@
 ---
-title: Liver Detox Asparagus and Dandelion Salad
+title: Liver Detox Asparagus and Dandelion Salad SSSS
 slug: asparagus-and-dandelions-salad
 year: 2016
 technique: In a bowl mix all ingridients together.
