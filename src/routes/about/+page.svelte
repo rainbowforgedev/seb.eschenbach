@@ -1,6 +1,8 @@
 <script lang="ts">
 	import PageHeader from '$lib/PageHeader.svelte';
 	import { aboutPage } from '$lib/content';
+	import {marked} from 'marked';
+	let body = marked.parse(aboutPage.body)
 </script>
 
 <svelte:head>
@@ -21,9 +23,9 @@
 
 		<section class="bio">
 			<h1>about</h1>
-			<p class="bio-text">
-				{aboutPage.body}
-			</p>
+			<div class="">
+				{@html body}
+			</div>
 		</section>
 	</div>
 
