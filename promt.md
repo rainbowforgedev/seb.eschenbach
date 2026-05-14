@@ -1,8 +1,8 @@
-# SvelteKit Künstler-Portfolio: S. Eschenbach
+# SvelteKit Künstler-Portfolio: S. RF
 
 ## Projektübersicht
 Erstelle eine SvelteKit-Website zur Vorstellung der Künstlerin/des Künstlers
-"S. Eschenbach". Die Seite soll modern, minimalistisch und brutalist-minimal
+"S. RF". Die Seite soll modern, minimalistisch und brutalist-minimal
 gestaltet sein, sodass die Kunstworke im Vordergrund stehen. Sprache: Deutsch.
 
 ## Tech-Stack

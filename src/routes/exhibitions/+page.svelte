@@ -8,10 +8,10 @@
 </script>
 
 <svelte:head>
-	<title>exhibitions — Sebastian Eschenbach, Maler</title>
-	<meta name="description" content="exhibitions des Malers Sebastian Eschenbach: Landschaftsmalerei der Uckermark im Dominikanerkloster Prenzlau, Rathaus Angermünde, Kunstpavillon Neuruppin und weiteren Orten." />
-	<meta property="og:title" content="exhibitions — Sebastian Eschenbach" />
-	<meta property="og:description" content="Aktuelle und vergangene exhibitions des Malers Sebastian Eschenbach aus der Uckermark." />
+	<title>exhibitions — Rainbow Forge, Maler</title>
+	<meta name="description" content="exhibitions des Malers Rainbow Forge: Landschaftsmalerei der Uckermark im Dominikanerkloster Prenzlau, Rathaus Angermünde, Kunstpavillon Neuruppin und weiteren Orten." />
+	<meta property="og:title" content="exhibitions — Rainbow Forge" />
+	<meta property="og:description" content="Aktuelle und vergangene exhibitions des Malers Rainbow Forge aus der Uckermark." />
 	<meta property="og:type" content="website" />
 </svelte:head>
 

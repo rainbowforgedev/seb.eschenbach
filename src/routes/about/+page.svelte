@@ -4,10 +4,10 @@
 </script>
 
 <svelte:head>
-	<title>about — Sebastian Eschenbach, Maler aus der Uckermark</title>
-	<meta name="description" content="Sebastian Eschenbach lebt und malt seit über zwanzig Jahren in der Uckermark. Biografie, künstlerischer Werdegang und Pressematerial." />
-	<meta property="og:title" content="about — Sebastian Eschenbach" />
-	<meta property="og:description" content="Biografie und künstlerischer Werdegang des Malers Sebastian Eschenbach aus der Uckermark." />
+	<title>about — </title>
+	<meta name="description" content="Rainbow Forge lebt und malt seit über zwanzig Jahren in der Uckermark. Biografie, künstlerischer Werdegang und Pressematerial." />
+	<meta property="og:title" content="about — Rainbow Forge" />
+	<meta property="og:description" content="Biografie und künstlerischer Werdegang des Malers Rainbow Forge aus der Uckermark." />
 	<meta property="og:type" content="website" />
 </svelte:head>
 
@@ -16,7 +16,7 @@
 <main>
 	<div class="about-layout">
 		<aside class="portrait">
-			<img src={aboutPage.portrait} alt="S. Eschenbach" />
+			<img src={aboutPage.portrait} alt="S. RF" />
 		</aside>
 
 		<section class="bio">

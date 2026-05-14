@@ -32,11 +32,11 @@
 </script>
 
 <svelte:head>
-	<title>{work.title} ({work.year}) — Sebastian Eschenbach</title>
-	<meta name="description" content="{work.title} ({work.year}) — {work.technique}, {work.dimensions}. work des Malers Sebastian Eschenbach aus der Uckermark, Brandenburg." />
-	<meta property="og:title" content="{work.title} — Sebastian Eschenbach" />
+	<title>{work.title} ({work.year}) — Rainbow Forge</title>
+	<meta name="description" content="{work.title} ({work.year}) — {work.technique}, {work.dimensions}. work des Malers Rainbow Forge aus der Uckermark, Brandenburg." />
+	<meta property="og:title" content="{work.title} — Rainbow Forge" />
 	<meta property="og:description" content="{work.title} ({work.year}), {work.technique}, {work.dimensions}." />
-	<meta property="og:image" content="https://sebastian-eschenbach.de{work.image}" />
+	<meta property="og:image" content="https://sebastian-RF.de{work.image}" />
 	<meta property="og:type" content="article" />
 </svelte:head>
 

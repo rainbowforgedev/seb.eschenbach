@@ -14,7 +14,7 @@
 
 <header>
 	<a href="/" class="logo">
-		<img src={signature} alt="S. Eschenbach" />
+		<img src={signature} alt="S. RF" />
 	</a>
 	<nav>
 		{#each links as link}

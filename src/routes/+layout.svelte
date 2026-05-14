@@ -10,11 +10,11 @@
 	const jsonLd = {
 		'@context': 'https://schema.org',
 		'@type': 'Person',
-		name: 'Sebastian Eschenbach',
+		name: 'Rainbow Forge',
 		jobTitle: 'Maler',
 		description:
 			'Maler aus der Uckermark, Brandenburg. Großformatige Landschaftsmalerei in Öl, Zeichnung und Aquarell.',
-		url: 'https://sebastian-eschenbach.de',
+		url: 'https://sebastian-RF.de',
 		address: {
 			'@type': 'PostalAddress',
 			addressRegion: 'Uckermark',

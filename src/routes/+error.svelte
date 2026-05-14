@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.status} — S. Eschenbach</title>
+	<title>{$page.status} — S. RF</title>
 	<meta name="description" content="Diese Seite wurde nicht gefunden." />
 </svelte:head>
 

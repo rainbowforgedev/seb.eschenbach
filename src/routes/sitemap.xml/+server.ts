@@ -1,6 +1,6 @@
 import { works, exhibitions } from '$lib/content';
 
-const DOMAIN = 'https://sebastian-eschenbach.de';
+const DOMAIN = 'https://sebastian-RF.de';
 
 const staticPages = ['/', '/gallery', '/exhibitions', '/about', '/contact'];
 

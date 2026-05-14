@@ -42,10 +42,10 @@
 </script>
 
 <svelte:head>
-	<title>contact — Sebastian Eschenbach, Maler aus der Uckermark</title>
-	<meta name="description" content="contact zum Maler Sebastian Eschenbach aus der Uckermark. Anfragen zu worksn, exhibitions und Kooperationen." />
-	<meta property="og:title" content="contact — Sebastian Eschenbach" />
-	<meta property="og:description" content="contact zum Maler Sebastian Eschenbach aus der Uckermark." />
+	<title>contact — Rainbow Forge, Maler aus der Uckermark</title>
+	<meta name="description" content="contact zum Maler Rainbow Forge aus der Uckermark. Anfragen zu worksn, exhibitions und Kooperationen." />
+	<meta property="og:title" content="contact — Rainbow Forge" />
+	<meta property="og:description" content="contact zum Maler Rainbow Forge aus der Uckermark." />
 	<meta property="og:type" content="website" />
 </svelte:head>
 
@@ -125,7 +125,7 @@
 					<textarea
 						name="message"
 						required
-						placeholder="Liebe Herr Eschenbach,&#10;ich möchte Ihnen schreiben weil…"
+						placeholder="Liebe Herr RF,&#10;ich möchte Ihnen schreiben weil…"
 						bind:value={message}
 						disabled={sending}
 						rows="7"

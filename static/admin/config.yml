@@ -1,8 +1,7 @@
 backend:
   name: github
-  repo: eschencode/seb.eschenbach
-  branch: main
-  base_url: https://sveltia-cms-auth.linuseschenbach.worksers.dev
+  repo: rainbowforgedev/seb.eschenbach
+  branch: stest
 
 
 

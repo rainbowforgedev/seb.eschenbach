@@ -11,12 +11,12 @@
 </script>
 
 <svelte:head>
-	<title>Sebastian Eschenbach — Maler aus der Uckermark</title>
-	<meta name="description" content="Sebastian Eschenbach ist Maler und lebt seit über zwanzig Jahren in der Uckermark. Großformatige Ölgemälde, Zeichnungen und Aquarelle der brandenburgischen Landschaft." />
-	<meta property="og:title" content="Sebastian Eschenbach — Maler aus der Uckermark" />
+	<title>Rainbow Forge — Maler aus der Uckermark</title>
+	<meta name="description" content="Rainbow Forge ist Maler und lebt seit über zwanzig Jahren in der Uckermark. Großformatige Ölgemälde, Zeichnungen und Aquarelle der brandenburgischen Landschaft." />
+	<meta property="og:title" content="Rainbow Forge — Maler aus der Uckermark" />
 	<meta property="og:description" content="Großformatige Ölgemälde, Zeichnungen und Aquarelle der brandenburgischen Landschaft." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://sebastian-eschenbach.de" />
+	<meta property="og:url" content="https://sebastian-RF.de" />
 	<link rel="preload" as="image" href="/bg-1.webp" />
 </svelte:head>
 

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>privacy-policy — Sebastian Eschenbach</title>
+	<title>privacy-policy — Rainbow Forge</title>
 </svelte:head>
 
 <PageHeader />

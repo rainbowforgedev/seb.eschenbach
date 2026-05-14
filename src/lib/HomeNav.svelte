@@ -11,7 +11,7 @@
 
 <div class="home-nav">
 	<a href="/" class="sig-link">
-		<img src={signature} alt="S. Eschenbach" class="sig-img" />
+		<img src={signature} alt="S. RF" class="sig-img" />
 	</a>
 	<nav>
 		{#each links as link}

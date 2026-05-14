@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
-	<title>gallery — Sebastian Eschenbach, Maler aus der Uckermark</title>
-	<meta name="description" content="workübersicht von Sebastian Eschenbach: Ölgemälde, Zeichnungen und Aquarelle — Birken, Wälder und Felder der Uckermark in Brandenburg." />
-	<meta property="og:title" content="gallery — Sebastian Eschenbach" />
+	<title>gallery — Rainbow Forge, Maler aus der Uckermark</title>
+	<meta name="description" content="workübersicht von Rainbow Forge: Ölgemälde, Zeichnungen und Aquarelle — Birken, Wälder und Felder der Uckermark in Brandenburg." />
+	<meta property="og:title" content="gallery — Rainbow Forge" />
 	<meta property="og:description" content="Ölgemälde, Zeichnungen und Aquarelle der Uckermark." />
 	<meta property="og:type" content="website" />
 </svelte:head>
