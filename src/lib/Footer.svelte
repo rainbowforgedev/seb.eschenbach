@@ -1,8 +1,8 @@
 <footer>
-	<span>© {new Date().getFullYear()} Sebastian Eschenbach</span>
+	<span>© {new Date().getFullYear()} Rainbow Forge</span>
 	<nav>
-		<a href="/impressum">Impressum</a>
-		<a href="/privacy-policy">privacy-policy</a>
+		
+		<a href="/privacy-policy">Privacy</a>
 	</nav>
 </footer>
 

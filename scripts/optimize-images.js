@@ -15,7 +15,7 @@ const CONTENT = path.join(ROOT, 'src/content');
 
 const IMAGE_EXTS = new Set(['.jpg', '.jpeg', '.png', '.JPG', '.JPEG', '.PNG']);
 const MAX_WIDTH = 1600;
-const QUALITY = 82;
+const QUALITY = 69;
 
 async function findImages(dir, shallow = true) {
 	const entries = await readdir(dir, { withFileTypes: true });

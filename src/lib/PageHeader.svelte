@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import signature from '$lib/assets/images/sign.png';
+	import signature from '$lib/assets/images/RFIconLettersOnly.webP';
 
 	const links = [
 		{ label: 'gallery', href: '/gallery' },

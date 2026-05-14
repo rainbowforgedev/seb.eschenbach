@@ -2,7 +2,7 @@
 	import './layout.css';
 	import { page } from '$app/stores';
 	import Footer from '$lib/Footer.svelte';
-	import signIcon from '$lib/assets/images/signiture.png';
+	import signIcon from '$lib/assets/images/RFIconLettersOnly.webP';
 
 	let { children } = $props();
 	let isHome = $derived($page.url.pathname === '/');

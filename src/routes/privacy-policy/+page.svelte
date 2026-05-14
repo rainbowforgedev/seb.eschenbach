@@ -9,57 +9,8 @@
 <PageHeader />
 
 <main>
-	<p class="section-label">privacy-policyERKLÄRUNG</p>
-
-	<section>
-		<h2>Verantwortlicher</h2>
-		<p>
-			Sebastian Eschenbach<br />
-			Musterstraße 1<br />
-			12345 Musterstadt<br />
-			E-Mail: <a href="mailto:seb.eschenbach@arcor.de">seb.eschenbach@arcor.de</a>
-		</p>
-	</section>
-
-	<section>
-		<h2>Erhebung und Verwendung von Daten</h2>
-		<p>
-			Diese Website erhebt keine personenbezogenen Daten, außer jenen, die Sie uns über das
-			contactformular freiwillig mitteilen. Die übermittelten Daten (E-Mail-Adresse und Nachricht)
-			werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet und nicht an Dritte
-			weitergegeben.
-		</p>
-	</section>
-
-	<section>
-		<h2>Hosting</h2>
-		<p>
-			Diese Website wird über Cloudflare worksers gehostet. Cloudflare kann dabei technisch bedingt
-			Verbindungsdaten verarbeiten. Weitere Informationen finden Sie in der
-			<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">
-				privacy-policyerklärung von Cloudflare</a
-			>.
-		</p>
-	</section>
-
-	<section>
-		<h2>E-Mail-Versand</h2>
-		<p>
-			Nachrichten aus dem contactformular werden über den Dienst Resend versendet. Dabei wird Ihre
-			E-Mail-Adresse und Nachricht an die Server von Resend übermittelt. Weitere Informationen unter
-			<a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">
-				resend.com/legal/privacy-policy</a
-			>.
-		</p>
-	</section>
-
-	<section>
-		<h2>Ihre Rechte</h2>
-		<p>
-			Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung Ihrer gespeicherten
-			Daten. Wenden Sie sich dazu an die oben genannte E-Mail-Adresse.
-		</p>
-	</section>
+	<h1 class="section-label">Privacy Policy</h1>
+<p>Doesn't exist because this is a test.</p>
 </main>
 
 <style>

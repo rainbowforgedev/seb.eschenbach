@@ -2,7 +2,7 @@
 	import { enhance } from '$app/forms';
 	import type { SubmitFunction } from '@sveltejs/kit';
 	import PageHeader from '$lib/PageHeader.svelte';
-	import signature from '$lib/assets/images/landschaft.jpg';
+	import signature from '$lib/assets/images/RFIconLettersOnly.webP';
 	import { contactPage } from '$lib/content';
 
 	let { form } = $props();

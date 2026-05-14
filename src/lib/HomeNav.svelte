@@ -1,5 +1,5 @@
 <script lang="ts">
-	import signature from '$lib/assets/images/sign.png';
+	import signature from '$lib/assets/images/RFIconLettersOnly.webP';
 
 	const links = [
 		{label: 'EXHIBITIONS', href:'/exhibitions'},
