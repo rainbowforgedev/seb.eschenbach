@@ -53,7 +53,7 @@
 		font-family: var(--font-mono);
 		font-size: 0.78rem;
 		letter-spacing: var(--nav-letter-spacing);
-		color: #edeae4;
+		color: #000;
 		text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 		transition: text-decoration 0.15s;
 	}
