@@ -29,6 +29,10 @@
 		window.addEventListener('keydown', handleKeydown);
 		return () => window.removeEventListener('keydown', handleKeydown);
 	});
+
+
+	   import { marked } from "marked";
+	   let body=marked.parse(work.body);
 </script>
 
 <svelte:head>
@@ -49,19 +53,19 @@
 		<div class="meta">
 			<dl>
 				<div class="meta-row">
-					<dt>Titel</dt>
+					<dt>What We're Making</dt>
 					<dd>{work.title}</dd>
 				</div>
 				<div class="meta-row">
-					<dt>Jahr</dt>
+					<dt>Date</dt>
 					<dd>{work.year}</dd>
 				</div>
 				<div class="meta-row">
-					<dt>Technik</dt>
+					<dt>Process</dt>
 					<dd>{work.technique}</dd>
 				</div>
 				<div class="meta-row">
-					<dt>Maße</dt>
+					<dt>Serves</dt>
 					<dd>{work.dimensions}</dd>
 				</div>
 				{#if work.status}
@@ -78,8 +82,9 @@
 				{/if}
 				{#if work.body}
 					<div class="meta-row description">
+					
 						<dt>Beschreibung</dt>
-						<dd>{work.body}</dd>
+						<dd><div>{@html body}</div> </dd>
 					</div>
 				{/if}
 			</dl>
@@ -92,7 +97,7 @@
 				<a href="/gallery/{prev.slug}">← {prev.title}</a>
 			{/if}
 		</div>
-		<a href="/gallery" class="back">← Alle works</a>
+		<a href="/gallery" class="back">← All Recipes</a>
 		<div class="works-nav-next">
 			{#if next}
 				<a href="/gallery/{next.slug}">{next.title} →</a>
@@ -110,7 +115,7 @@
 
 	.artworks {
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: .5fr;
 		gap: 3rem;
 	}
 
@@ -134,7 +139,7 @@
 
 	.meta-row {
 		display: grid;
-		grid-template-columns: 120px 1fr;
+		grid-template-columns: 100px 1fr;
 		gap: 1rem;
 		padding: 0.7rem 0;
 		border-bottom: 1px solid var(--color-border);
@@ -207,7 +212,7 @@
 
 	@media (min-width: 1024px) {
 		.artworks {
-			grid-template-columns: 1fr 320px;
+			grid-template-columns: 1fr 1fr;
 			align-items: start;
 		}
 
