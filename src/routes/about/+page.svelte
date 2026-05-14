@@ -1,12 +1,12 @@
 <script lang="ts">
 	import PageHeader from '$lib/PageHeader.svelte';
-	import { vitaPage } from '$lib/content';
+	import { aboutPage } from '$lib/content';
 </script>
 
 <svelte:head>
-	<title>Vita — Sebastian Eschenbach, Maler aus der Uckermark</title>
+	<title>about — Sebastian Eschenbach, Maler aus der Uckermark</title>
 	<meta name="description" content="Sebastian Eschenbach lebt und malt seit über zwanzig Jahren in der Uckermark. Biografie, künstlerischer Werdegang und Pressematerial." />
-	<meta property="og:title" content="Vita — Sebastian Eschenbach" />
+	<meta property="og:title" content="about — Sebastian Eschenbach" />
 	<meta property="og:description" content="Biografie und künstlerischer Werdegang des Malers Sebastian Eschenbach aus der Uckermark." />
 	<meta property="og:type" content="website" />
 </svelte:head>
@@ -14,21 +14,21 @@
 <PageHeader />
 
 <main>
-	<div class="vita-layout">
+	<div class="about-layout">
 		<aside class="portrait">
-			<img src={vitaPage.portrait} alt="S. Eschenbach" />
+			<img src={aboutPage.portrait} alt="S. Eschenbach" />
 		</aside>
 
 		<section class="bio">
-			<h1>Vita</h1>
+			<h1>about</h1>
 			<p class="bio-text">
-				{vitaPage.body}
+				{aboutPage.body}
 			</p>
 		</section>
 	</div>
 
 	<section class="press">
-		<img src={vitaPage.pressImage} alt="Zeitungsartikel" />
+		<img src={aboutPage.pressImage} alt="Zeitungsartikel" />
 	</section>
 </main>
 
@@ -39,7 +39,7 @@
 		padding: 3rem 2rem 6rem;
 	}
 
-	.vita-layout {
+	.about-layout {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 3rem;
@@ -87,7 +87,7 @@
 	}
 
 	@media (min-width: 768px) {
-		.vita-layout {
+		.about-layout {
 			grid-template-columns: 280px 1fr;
 			align-items: start;
 		}
@@ -98,7 +98,7 @@
 	}
 
 	@media (min-width: 1024px) {
-		.vita-layout {
+		.about-layout {
 			grid-template-columns: 320px 1fr;
 		}
 

@@ -1,6 +1,6 @@
 ---
 title: Artist In Residence - Turmstube Neu Temmen
-slug: neu temmen
+slug: neu-temmen
 location: Neu Temmen / Uckermark
 dateFrom: 15. September 2025
 dateTo: 28. September 2025

@@ -1,17 +1,17 @@
 <script lang="ts">
 	import PageHeader from '$lib/PageHeader.svelte';
 	import PostcardCard from '$lib/PostcardCard.svelte';
-	import { ausstellungen } from '$lib/content';
+	import { exhibitions } from '$lib/content';
 
-	const current = ausstellungen.find((a) => a.isCurrent);
-	const past = ausstellungen.filter((a) => !a.isCurrent);
+	const current = exhibitions.find((a) => a.isCurrent);
+	const past = exhibitions.filter((a) => !a.isCurrent);
 </script>
 
 <svelte:head>
-	<title>Ausstellungen — Sebastian Eschenbach, Maler</title>
-	<meta name="description" content="Ausstellungen des Malers Sebastian Eschenbach: Landschaftsmalerei der Uckermark im Dominikanerkloster Prenzlau, Rathaus Angermünde, Kunstpavillon Neuruppin und weiteren Orten." />
-	<meta property="og:title" content="Ausstellungen — Sebastian Eschenbach" />
-	<meta property="og:description" content="Aktuelle und vergangene Ausstellungen des Malers Sebastian Eschenbach aus der Uckermark." />
+	<title>exhibitions — Sebastian Eschenbach, Maler</title>
+	<meta name="description" content="exhibitions des Malers Sebastian Eschenbach: Landschaftsmalerei der Uckermark im Dominikanerkloster Prenzlau, Rathaus Angermünde, Kunstpavillon Neuruppin und weiteren Orten." />
+	<meta property="og:title" content="exhibitions — Sebastian Eschenbach" />
+	<meta property="og:description" content="Aktuelle und vergangene exhibitions des Malers Sebastian Eschenbach aus der Uckermark." />
 	<meta property="og:type" content="website" />
 </svelte:head>
 
@@ -36,7 +36,7 @@
 
 	{#if past.length > 0}
 		<section class="past">
-			<p class="section-label">VERGANGENE AUSSTELLUNGEN</p>
+			<p class="section-label">VERGANGENE exhibitions</p>
 			<div class="grid">
 				{#each past as a}
 					<div class="card-wrap">

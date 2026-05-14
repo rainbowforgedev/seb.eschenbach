@@ -3,10 +3,10 @@
 	import signature from '$lib/assets/images/sign.png';
 
 	const links = [
-		{ label: 'GALERIE', href: '/galerie' },
-		{ label: 'VITA', href: '/vita' },
-		{ label: 'AUSSTELLUNGEN', href: '/ausstellungen' },
-		{ label: 'KONTAKT', href: '/kontakt' }
+		{ label: 'gallery', href: '/gallery' },
+		{ label: 'about', href: '/about' },
+		{ label: 'exhibitions', href: '/exhibitions' },
+		{ label: 'contact', href: '/contact' }
 	];
 
 	let pathname = $derived($page.url.pathname);

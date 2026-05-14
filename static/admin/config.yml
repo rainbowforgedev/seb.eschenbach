@@ -2,10 +2,11 @@ backend:
   name: github
   repo: eschencode/seb.eschenbach
   branch: main
-  base_url: https://sveltia-cms-auth.linuseschenbach.workers.dev
+  base_url: https://sveltia-cms-auth.linuseschenbach.worksers.dev
 
 
-# Lokaler Entwicklungsmodus — startet mit: npx @sveltia/cms-proxy-server
+
+# Local development mode — starts with: npx @sveltia/cms-proxy-server
 local_backend: false
 
 
@@ -13,95 +14,141 @@ media_folder: static/uploads
 public_folder: /uploads
 
 collections:
-  - name: werke
-    label: Werke
-    label_singular: Werk
-    folder: src/content/werke
-    create: true
-    delete: true
-    slug: "{{slug}}"
-    extension: md
-    format: yaml-frontmatter
-    fields:
-      - { label: Titel, name: title, widget: string }
-      - { label: Slug, name: slug, widget: string, hint: "URL-freundlicher Name, z.B. bei-gerswalde" }
-      - { label: Jahr, name: year, widget: number, value_type: int }
-      - { label: Technik, name: technique, widget: string, hint: "z.B. Öl auf Leinwand" }
-      - { label: Maße, name: dimensions, widget: string, hint: "z.B. 40 × 60 cm" }
-      - { label: Bild, name: image, widget: image, hint: "Bitte vor dem Upload in WebP konvertieren und auf max. 1600px Breite verkleinern (z.B. squoosh.app). Max. 500 KB." }
-      - { label: Status, name: status, widget: string, required: false, hint: "z.B. Verfügbar, Verkauft, Reserviert" }
-      - { label: Preis, name: price, widget: string, required: false, hint: "z.B. 1.200 €" }
-      - { label: Beschreibung, name: body, widget: markdown, required: false }
 
-  - name: ausstellungen
-    label: Ausstellungen
-    label_singular: Ausstellung
-    folder: src/content/ausstellungen
+
+
+  - name: works
+    label: works
+    label_singular: works
+    folder: src/content/works
     create: true
     delete: true
     slug: "{{slug}}"
     extension: md
     format: yaml-frontmatter
     fields:
-      - { label: Titel, name: title, widget: string }
+
+
+
+
+
+
+
+
+
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string, hint: "URL-friendly name, e.g., bei-gerswalde" }
+      - { label: Year, name: year, widget: number, value_type: int }
+      - { label: Technique, name: technique, widget: string, hint: "e.g., Oil on canvas" }
+      - { label: Dimensions, name: dimensions, widget: string, hint: "e.g., 40 × 60 cm" }
+      - { label: Image, name: image, widget: image, hint: "Please convert to WebP and resize to max. 1600px width before uploading (e.g., squoosh.app). Max. 500 KB." }
+      - { label: Status, name: status, widget: string, required: false, hint: "e.g., Available, Sold, Reserved" }
+      - { label: Price, name: price, widget: string, required: false, hint: "e.g., 1,200 €" }
+      - { label: Description, name: body, widget: markdown, required: false }
+
+
+
+
+  - name: exhibitions
+    label: Exhibitions
+    label_singular: Exhibition
+    folder: src/content/exhibitions
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    fields:
+
+      - { label: Title, name: title, widget: string }
       - { label: Slug, name: slug, widget: string }
-      - { label: Ort, name: location, widget: string }
-      - { label: Von, name: dateFrom, widget: string, hint: "z.B. 1. Mai 2026" }
-      - { label: Bis, name: dateTo, widget: string, hint: "z.B. 27. Juni 2026" }
-      - { label: Bild, name: image, widget: image, hint: "Bitte vor dem Upload in WebP konvertieren und auf max. 1600px Breite verkleinern (z.B. squoosh.app). Max. 500 KB." }
-      - label: Ausrichtung
+
+
+
+
+
+      - { label: Location, name: location, widget: string }
+      - { label: From, name: dateFrom, widget: string, hint: "e.g., May 1, 2026" }
+      - { label: To, name: dateTo, widget: string, hint: "e.g., June 27, 2026" }
+      - { label: Image, name: image, widget: image, hint: "Please convert to WebP and resize to max. 1600px width before uploading (e.g., squoosh.app). Max. 500 KB." }
+      - label: Orientation
         name: orientation
         widget: select
         options:
-          - { label: Querformat, value: landscape }
-          - { label: Hochformat, value: portrait }
+
+
+          - { label: Landscape, value: landscape }
+          - { label: Portrait, value: portrait }
         default: landscape
-      - { label: Aktuelle Ausstellung, name: isCurrent, widget: boolean, default: false }
-      - { label: Beschreibung, name: body, widget: markdown }
+
+
+      - { label: Is Current Exhibition, name: isCurrent, widget: boolean, default: false }
+      - { label: Description, name: body, widget: markdown }
 
   - name: pages
-    label: Seiten
+
+    label: Pages
     files:
-      - name: vita_page
-        label: Vita Seite
-        file: src/content/pages/vita.md
+      - name: about_page
+
+        label: about Page
+        file: src/content/pages/about.md
         format: yaml-frontmatter
         fields:
-          - { label: Portraitbild, name: portrait, widget: image, hint: "Bitte vor dem Upload in WebP konvertieren (z.B. squoosh.app). Max. 500 KB." }
-          - { label: Pressebild, name: pressImage, widget: image, hint: "Bitte vor dem Upload in WebP konvertieren (z.B. squoosh.app). Max. 500 KB." }
-          - { label: Biografie, name: body, widget: markdown }
-      - name: kontakt_page
-        label: Kontakt Seite
-        file: src/content/pages/kontakt.md
+
+
+
+          - { label: Portrait Image, name: portrait, widget: image, hint: "Please convert to WebP before uploading (e.g., squoosh.app). Max. 500 KB." }
+          - { label: Press Image, name: pressImage, widget: image, hint: "Please convert to WebP before uploading (e.g., squoosh.app). Max. 500 KB." }
+          - { label: Biography, name: body, widget: markdown }
+      - name: contact_page
+
+        label: Contact Page
+        file: src/content/pages/contact.md
         format: yaml-frontmatter
         fields:
           - { label: Name, name: name, widget: string }
           - { label: 'E-Mail', name: email, widget: string }
-          - { label: Telefon, name: phone, widget: string }
-          - label: Adresszeilen
+
+
+          - { label: Phone, name: phone, widget: string }
+          - label: Address Lines
             name: address
             widget: list
-            hint: "Zeilen für die Postkarten-Adresse"
-          - { label: Hinweistext, name: hint, widget: string }
 
-  - name: vita
-    label: Vita
-    label_singular: Vita-Eintrag
-    folder: src/content/vita
+
+            hint: "Lines for the postcard address"
+          - { label: Hint Text, name: hint, widget: string }
+
+  - name: about
+    label: about
+
+    label_singular: about Entry
+    folder: src/content/about
     create: true
     delete: true
     slug: "{{year}}-{{slug}}"
     extension: md
     format: yaml-frontmatter
     fields:
-      - { label: Jahr, name: year, widget: string, hint: "z.B. 2023 oder 1980–1985" }
-      - { label: Titel, name: title, widget: string }
-      - label: Kategorie
+
+
+
+      - { label: Year, name: year, widget: string, hint: "e.g., 2023 or 1980–1985" }
+      - { label: Title, name: title, widget: string }
+      - label: Category
         name: category
         widget: select
         options:
-          - { label: Ausbildung, value: ausbildung }
-          - { label: Ausstellung, value: ausstellung }
-          - { label: Preis, value: preis }
-          - { label: Sonstiges, value: sonstiges }
-      - { label: Beschreibung, name: body, widget: markdown, required: false }
+
+
+
+
+
+
+          - { label: Education, value: ausbildung }
+          - { label: Exhibition, value: ausstellung }
+          - { label: Price, value: preis }
+          - { label: Other, value: sonstiges }
+      - { label: Description, name: body, widget: markdown, required: false }
+

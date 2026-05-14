@@ -3,7 +3,7 @@
 	import type { SubmitFunction } from '@sveltejs/kit';
 	import PageHeader from '$lib/PageHeader.svelte';
 	import signature from '$lib/assets/images/landschaft.jpg';
-	import { kontaktPage } from '$lib/content';
+	import { contactPage } from '$lib/content';
 
 	let { form } = $props();
 
@@ -42,10 +42,10 @@
 </script>
 
 <svelte:head>
-	<title>Kontakt — Sebastian Eschenbach, Maler aus der Uckermark</title>
-	<meta name="description" content="Kontakt zum Maler Sebastian Eschenbach aus der Uckermark. Anfragen zu Werken, Ausstellungen und Kooperationen." />
-	<meta property="og:title" content="Kontakt — Sebastian Eschenbach" />
-	<meta property="og:description" content="Kontakt zum Maler Sebastian Eschenbach aus der Uckermark." />
+	<title>contact — Sebastian Eschenbach, Maler aus der Uckermark</title>
+	<meta name="description" content="contact zum Maler Sebastian Eschenbach aus der Uckermark. Anfragen zu worksn, exhibitions und Kooperationen." />
+	<meta property="og:title" content="contact — Sebastian Eschenbach" />
+	<meta property="og:description" content="contact zum Maler Sebastian Eschenbach aus der Uckermark." />
 	<meta property="og:type" content="website" />
 </svelte:head>
 
@@ -53,22 +53,22 @@
 
 <main>
 	<section class="info">
-		<p class="section-label">KONTAKT</p>
+		<p class="section-label">contact</p>
 		<dl class="contact-list">
 			<div class="row">
 				<dt>Name</dt>
-				<dd>{kontaktPage.name}</dd>
+				<dd>{contactPage.name}</dd>
 			</div>
 			<div class="row">
 				<dt>E-Mail</dt>
-				<dd><a href="mailto:{kontaktPage.email}">{kontaktPage.email}</a></dd>
+				<dd><a href="mailto:{contactPage.email}">{contactPage.email}</a></dd>
 			</div>
 			<div class="row">
 				<dt>Telefon</dt>
-				<dd><a href="tel:{kontaktPage.phone.replace(/\s/g, '')}">{kontaktPage.phone}</a></dd>
+				<dd><a href="tel:{contactPage.phone.replace(/\s/g, '')}">{contactPage.phone}</a></dd>
 			</div>
 		</dl>
-		<p class="hint">{kontaktPage.hint}</p>
+		<p class="hint">{contactPage.hint}</p>
 	</section>
 
 	<section class="card-stage" class:flying class:done>
@@ -87,7 +87,7 @@
 				class="postcard"
 				class:sending
 				class:stamped
-				aria-label="Kontakt-Postkarte"
+				aria-label="contact-Postkarte"
 			>
 				<!-- Stamp -->
 				<div class="stamp" aria-hidden="true">
@@ -136,7 +136,7 @@
 				<div class="address">
 					<div class="addr-label">An</div>
 					<div class="addr-lines">
-						{#each kontaktPage.address as line}
+						{#each contactPage.address as line}
 							<div class="addr-line">{line}</div>
 						{/each}
 					</div>

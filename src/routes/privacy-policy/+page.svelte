@@ -3,13 +3,13 @@
 </script>
 
 <svelte:head>
-	<title>Datenschutz — Sebastian Eschenbach</title>
+	<title>privacy-policy — Sebastian Eschenbach</title>
 </svelte:head>
 
 <PageHeader />
 
 <main>
-	<p class="section-label">DATENSCHUTZERKLÄRUNG</p>
+	<p class="section-label">privacy-policyERKLÄRUNG</p>
 
 	<section>
 		<h2>Verantwortlicher</h2>
@@ -25,7 +25,7 @@
 		<h2>Erhebung und Verwendung von Daten</h2>
 		<p>
 			Diese Website erhebt keine personenbezogenen Daten, außer jenen, die Sie uns über das
-			Kontaktformular freiwillig mitteilen. Die übermittelten Daten (E-Mail-Adresse und Nachricht)
+			contactformular freiwillig mitteilen. Die übermittelten Daten (E-Mail-Adresse und Nachricht)
 			werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet und nicht an Dritte
 			weitergegeben.
 		</p>
@@ -34,10 +34,10 @@
 	<section>
 		<h2>Hosting</h2>
 		<p>
-			Diese Website wird über Cloudflare Workers gehostet. Cloudflare kann dabei technisch bedingt
+			Diese Website wird über Cloudflare worksers gehostet. Cloudflare kann dabei technisch bedingt
 			Verbindungsdaten verarbeiten. Weitere Informationen finden Sie in der
 			<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">
-				Datenschutzerklärung von Cloudflare</a
+				privacy-policyerklärung von Cloudflare</a
 			>.
 		</p>
 	</section>
@@ -45,7 +45,7 @@
 	<section>
 		<h2>E-Mail-Versand</h2>
 		<p>
-			Nachrichten aus dem Kontaktformular werden über den Dienst Resend versendet. Dabei wird Ihre
+			Nachrichten aus dem contactformular werden über den Dienst Resend versendet. Dabei wird Ihre
 			E-Mail-Adresse und Nachricht an die Server von Resend übermittelt. Weitere Informationen unter
 			<a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">
 				resend.com/legal/privacy-policy</a

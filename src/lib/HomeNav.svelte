@@ -2,10 +2,10 @@
 	import signature from '$lib/assets/images/sign.png';
 
 	const links = [
-		{label: 'AUSSTELLUNGEN', href:'/ausstellungen'},
-		{ label: 'GALERIE', href: '/galerie' },
-		{ label: 'VITA', href: '/vita' },
-		{ label: 'KONTAKT', href: '/kontakt' }
+		{label: 'EXHIBITIONS', href:'/exhibitions'},
+		{ label: 'gallery', href: '/gallery' },
+		{ label: 'about', href: '/about' },
+		{ label: 'CONTACT', href: '/contact' }
 	];
 </script>
 

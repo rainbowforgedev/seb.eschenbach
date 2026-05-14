@@ -1,14 +1,14 @@
-import { werke, ausstellungen } from '$lib/content';
+import { works, exhibitions } from '$lib/content';
 
 const DOMAIN = 'https://sebastian-eschenbach.de';
 
-const staticPages = ['', '/galerie', '/ausstellungen', '/vita', '/kontakt', '/Atelier'];
+const staticPages = ['/', '/gallery', '/exhibitions', '/about', '/contact'];
 
 export async function GET() {
-	const werkUrls = werke.map((w) => `/galerie/${w.slug}`);
-	const ausstellungUrls = ausstellungen.map((a) => `/ausstellungen/${a.slug}`);
+	const workUrls = works.map((w) => `/gallery/${w.slug}`);
+	const ausstellungUrls = exhibitions.map((a) => `/exhibitions/${a.slug}`);
 
-	const allUrls = [...staticPages, ...werkUrls, ...ausstellungUrls];
+	const allUrls = [...staticPages, ...workUrls, ...ausstellungUrls];
 
 	const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

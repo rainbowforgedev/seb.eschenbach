@@ -1,12 +1,12 @@
 <script lang="ts">
 	import PageHeader from '$lib/PageHeader.svelte';
-	import { werke } from '$lib/content';
+	import { works } from '$lib/content';
 </script>
 
 <svelte:head>
-	<title>Galerie — Sebastian Eschenbach, Maler aus der Uckermark</title>
-	<meta name="description" content="Werkübersicht von Sebastian Eschenbach: Ölgemälde, Zeichnungen und Aquarelle — Birken, Wälder und Felder der Uckermark in Brandenburg." />
-	<meta property="og:title" content="Galerie — Sebastian Eschenbach" />
+	<title>gallery — Sebastian Eschenbach, Maler aus der Uckermark</title>
+	<meta name="description" content="workübersicht von Sebastian Eschenbach: Ölgemälde, Zeichnungen und Aquarelle — Birken, Wälder und Felder der Uckermark in Brandenburg." />
+	<meta property="og:title" content="gallery — Sebastian Eschenbach" />
 	<meta property="og:description" content="Ölgemälde, Zeichnungen und Aquarelle der Uckermark." />
 	<meta property="og:type" content="website" />
 </svelte:head>
@@ -15,25 +15,25 @@
 
 <main>
 	<div class="grid">
-		{#each werke as werk, i}
-			<a href="/galerie/{werk.slug}" class="card">
+		{#each works as work, i}
+			<a href="/gallery/{work.slug}" class="card">
 				<div class="img-wrap">
 					<img
-						src={werk.image}
-						alt={werk.title}
+						src={work.image}
+						alt={work.title}
 						width="4"
 						height="3"
 						loading={i < 4 ? 'eager' : 'lazy'}
 						fetchpriority={i === 0 ? 'high' : undefined}
 					/>
 					<div class="overlay">
-						<span class="overlay-title">{werk.title}</span>
-						<span class="overlay-year">{werk.year}</span>
+						<span class="overlay-title">{work.title}</span>
+						<span class="overlay-year">{work.year}</span>
 					</div>
 				</div>
 				<div class="caption">
-					<span class="caption-title">{werk.title}</span>
-					<span class="caption-year">{werk.year}</span>
+					<span class="caption-title">{work.title}</span>
+					<span class="caption-year">{work.year}</span>
 				</div>
 			</a>
 		{/each}

@@ -35,12 +35,12 @@ export const actions: Actions = {
 		const toEmail = env?.CONTACT_TO_EMAIL;
 		const fromEmail = env?.CONTACT_FROM_EMAIL ?? 'onboarding@resend.dev';
 
-		//console.log('[kontakt] apiKey:', apiKey ? '✓ set' : '✗ missing');
-		//console.log('[kontakt] toEmail:', toEmail ? `✓ ${toEmail}` : '✗ missing');
-		//console.log('[kontakt] fromEmail:', JSON.stringify(fromEmail));
+		//console.log('[contact] apiKey:', apiKey ? '✓ set' : '✗ missing');
+		//console.log('[contact] toEmail:', toEmail ? `✓ ${toEmail}` : '✗ missing');
+		//console.log('[contact] fromEmail:', JSON.stringify(fromEmail));
 
 		if (!apiKey || !toEmail) {
-			console.error('[kontakt] Env vars missing', { apiKey, toEmail });
+			console.error('[contact] Env vars missing', { apiKey, toEmail });
 			return fail(500, { error: 'Versand momentan nicht möglich. Bitte später erneut versuchen.' });
 		}
 

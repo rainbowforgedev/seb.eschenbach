@@ -12,8 +12,8 @@
 	const links = [
 		{ name: 'Atelier', href: '/Atelier' },
 		{ name: 'Ausstellung', href: '/Ausstellung' },
-		{ name: 'Galerie', href: '/Galerie' },
-		{ name: 'Vita', href: '/vita' }
+		{ name: 'gallery', href: '/gallery' },
+		{ name: 'about', href: '/about' }
 	];
 </script>
 

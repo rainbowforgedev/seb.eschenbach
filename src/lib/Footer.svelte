@@ -2,7 +2,7 @@
 	<span>© {new Date().getFullYear()} Sebastian Eschenbach</span>
 	<nav>
 		<a href="/impressum">Impressum</a>
-		<a href="/datenschutz">Datenschutz</a>
+		<a href="/privacy-policy">privacy-policy</a>
 	</nav>
 </footer>
 
